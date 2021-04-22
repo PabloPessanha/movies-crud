@@ -2,7 +2,7 @@ const Types = {
   NEW: 'user/NEW',
 };
 
-export default function user(state = '', action) {
+export default function user(state = 'Guest', action) {
   switch (action.type) {
     case Types.NEW:
       return action.payload;
